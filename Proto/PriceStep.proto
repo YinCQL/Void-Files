@@ -1,0 +1,11 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message PriceStep {
+  int32 price = 1;
+  int32 amount = 2;
+}

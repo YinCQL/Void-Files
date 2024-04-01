@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ItemList.proto";
+import "ModChangeInfo.proto";
+
+message PolarizationResponse {
+  ItemList items = 1;
+  repeated ModChangeInfo mod_un_load_infos = 2;
+}

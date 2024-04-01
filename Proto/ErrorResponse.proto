@@ -1,0 +1,11 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message ErrorResponse {
+  int32 err_code = 1;
+  string err_desc = 2;
+}

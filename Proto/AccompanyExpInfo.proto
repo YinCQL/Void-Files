@@ -1,0 +1,12 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message AccompanyExpInfo {
+  int32 member_type = 1;
+  int32 identity_i_d = 2;
+  int32 gain_exp = 3;
+}

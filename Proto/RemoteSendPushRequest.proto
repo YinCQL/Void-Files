@@ -1,0 +1,13 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message RemoteSendPushRequest {
+  string group_name = 1;
+  repeated string target_i_ds = 2;
+  string route = 3;
+  bytes data = 4;
+}

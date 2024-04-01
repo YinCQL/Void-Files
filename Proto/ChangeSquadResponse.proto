@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "CharacterSquadFormat.proto";
+
+message ChangeSquadResponse {
+  ErrorResponse err = 1;
+  CharacterSquadFormat squad_info = 2;
+}

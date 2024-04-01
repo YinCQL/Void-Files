@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "UpdateInfo.proto";
+
+message ChangeFrameColorResponse {
+  ErrorResponse err = 1;
+  int32 seq_i_d = 2;
+  map<int32, string> color_info = 3;
+  UpdateInfo update_info = 4;
+}

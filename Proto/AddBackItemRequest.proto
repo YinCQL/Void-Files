@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "AddItemType.proto";
+
+message AddBackItemRequest {
+  repeated int32 add_i_d = 1;
+  int32 add_count = 2;
+  AddItemType type = 3;
+}

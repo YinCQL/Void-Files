@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "NodeInfo.proto";
+
+message CheatUnlockCityResponse {
+  ErrorResponse err = 1;
+  repeated NodeInfo node_infos = 2;
+}

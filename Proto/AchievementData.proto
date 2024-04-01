@@ -1,0 +1,15 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "AchievementStatus.proto";
+import "SubAchievementData.proto";
+
+message AchievementData {
+  int32 main_achievement_i_d = 1;
+  AchievementStatus status = 2;
+  repeated SubAchievementData sub_achievements = 3;
+}

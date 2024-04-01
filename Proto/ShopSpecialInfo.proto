@@ -1,0 +1,18 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "PlayerRechargeInfo.proto";
+import "BattlePassInfo.proto";
+import "MonthlyPassInfo.proto";
+import "GrowthRebateInfo.proto";
+
+message ShopSpecialInfo {
+  PlayerRechargeInfo recharge_info = 1;
+  BattlePassInfo battle_pass_info = 2;
+  MonthlyPassInfo monthly_pass_info = 3;
+  GrowthRebateInfo growth_rebate_info = 4;
+}

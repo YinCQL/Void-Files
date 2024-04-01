@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "CraftPendingEntry.proto";
+
+message CraftListResponse {
+  ErrorResponse err = 1;
+  repeated CraftPendingEntry pending_entries = 2;
+}

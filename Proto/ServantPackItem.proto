@@ -1,0 +1,23 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "LoadModInfo.proto";
+
+message ServantPackItem {
+  int32 seq_i_d = 1;
+  int32 item_i_d = 2;
+  int32 rank = 3;
+  bool lock = 4;
+  int32 exp = 5;
+  int32 electricity = 6;
+  int32 mod_slot = 7;
+  int64 gain_time_stamp = 8;
+  repeated LoadModInfo load_mod_info = 9;
+  map<int32, int32> polarity_info = 10;
+  int32 polarization_count = 11;
+  int32 used_electricity = 12;
+}

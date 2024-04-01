@@ -1,0 +1,18 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ItemList.proto";
+import "UpdateInfo.proto";
+
+message MonthlyPassGetResponse {
+  ErrorResponse err = 1;
+  int32 monthly_pass_remain_days = 2;
+  int64 last_check_time = 3;
+  ItemList items = 4;
+  UpdateInfo update_info = 5;
+}

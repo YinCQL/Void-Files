@@ -1,0 +1,12 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message SpecialLevelInfo {
+  int32 special_level_i_d = 1;
+  int32 entry_times = 2;
+  int64 next_time = 3;
+}

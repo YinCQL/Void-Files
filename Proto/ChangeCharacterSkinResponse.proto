@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+
+message ChangeCharacterSkinResponse {
+  ErrorResponse err = 1;
+  int32 character_i_d = 2;
+  int32 cur_skin_i_d = 3;
+}

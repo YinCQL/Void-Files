@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ItemList.proto";
+import "UpdateInfo.proto";
+
+message UseRewardChestItemResponse {
+  ErrorResponse err = 1;
+  ItemList list = 2;
+  UpdateInfo update_info = 3;
+}

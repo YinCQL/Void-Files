@@ -1,0 +1,13 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message PolarizationRequest {
+  int32 item_category = 1;
+  int32 carrier_seq_i_d = 2;
+  int32 slot = 3;
+  int32 polarity_type = 4;
+}

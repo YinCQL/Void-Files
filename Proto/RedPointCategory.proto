@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+enum RedPointCategory {
+  InvalidRedPoint = 0;
+  WeaponRedPoint = 1;
+  FrameRedPoint = 2;
+  ModRedPoint = 3;
+  RewardChestRedPoint = 4;
+}

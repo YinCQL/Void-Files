@@ -1,0 +1,13 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message PlaceMarketOrderRequest {
+  int32 action = 1;
+  int32 item_i_d = 2;
+  int32 seq_i_d = 3;
+  int32 price = 4;
+}

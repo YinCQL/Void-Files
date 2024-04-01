@@ -1,0 +1,12 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "QuestPoolWithSteps.proto";
+
+message SetQuestStepsRequest {
+  repeated QuestPoolWithSteps quest_pool_step_data = 1;
+}

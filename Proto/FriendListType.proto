@@ -1,0 +1,12 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+enum FriendListType {
+  Friend = 0;
+  FriendRequest = 1;
+  Blacklist = 2;
+}

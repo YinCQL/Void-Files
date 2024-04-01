@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ItemTradePrice.proto";
+
+message GetMarketItemPriceListResponse {
+  ErrorResponse err = 1;
+  repeated ItemTradePrice item_trade_price_list = 2;
+}

@@ -1,0 +1,17 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message MarketOrder {
+  int64 i_d = 1;
+  string u_i_d = 2;
+  string nickname = 3;
+  int32 item_i_d = 4;
+  int32 price = 5;
+  int32 actual_price = 6;
+  int32 state = 7;
+  int32 amount = 8;
+}

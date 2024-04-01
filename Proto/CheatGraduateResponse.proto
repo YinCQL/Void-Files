@@ -1,0 +1,20 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "UpdateInfo.proto";
+import "ShowQuestData.proto";
+import "NodeInfo.proto";
+import "TrackQuestData.proto";
+
+message CheatGraduateResponse {
+  ErrorResponse err = 1;
+  UpdateInfo update_info = 2;
+  repeated ShowQuestData quest_data = 3;
+  repeated NodeInfo node_infos = 4;
+  repeated TrackQuestData track_quest_data = 5;
+}

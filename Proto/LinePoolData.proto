@@ -1,0 +1,13 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "RewardStateType.proto";
+
+message LinePoolData {
+  int32 line_i_d = 1;
+  RewardStateType state = 2;
+}

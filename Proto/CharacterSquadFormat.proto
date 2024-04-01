@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "SquadEntity.proto";
+
+message CharacterSquadFormat {
+  string squad_name = 1;
+  int32 squad_i_d = 2;
+  map<int32, SquadEntity> squads = 3;
+}

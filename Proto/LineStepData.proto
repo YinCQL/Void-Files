@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "RewardStateType.proto";
+import "StepData.proto";
+
+message LineStepData {
+  int32 line_i_d = 1;
+  int64 refresh_time_stamp = 2;
+  RewardStateType state = 3;
+  repeated StepData step_data = 4;
+}

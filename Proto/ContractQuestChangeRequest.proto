@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ContractQuestProcessAction.proto";
+
+message ContractQuestChangeRequest {
+  ContractQuestProcessAction process_type = 1;
+  int32 quest_i_d = 2;
+  int32 contract_slot = 3;
+}

@@ -1,0 +1,15 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "MarketItemSaveAction.proto";
+
+message SaveMarketItemResponse {
+  ErrorResponse err = 1;
+  int32 item_i_d = 2;
+  MarketItemSaveAction action = 3;
+}

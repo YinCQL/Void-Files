@@ -1,0 +1,17 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ModChangeInfo.proto";
+import "ModPackItem.proto";
+
+message ModChangeResponse {
+  ErrorResponse err = 1;
+  ModChangeInfo mod_info_from = 2;
+  ModChangeInfo mod_info_to = 3;
+  repeated ModPackItem mod_pack_items = 4;
+}

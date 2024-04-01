@@ -1,0 +1,13 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message ProfileCharacter {
+  int32 character_i_d = 1;
+  int32 skin_i_d = 2;
+  int32 weapon_item_i_d = 3;
+  int32 frame_item_i_d = 4;
+}

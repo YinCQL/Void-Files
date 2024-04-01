@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "StoryInfo.proto";
+
+message NodeInfo {
+  int32 node_i_d = 1;
+  repeated StoryInfo story_infos = 2;
+  bool hidden = 3;
+}

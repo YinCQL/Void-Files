@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ShopSpecialInfo.proto";
+import "ProductsInfo.proto";
+
+message ShopInfoResponse {
+  ErrorResponse err = 1;
+  ShopSpecialInfo shop_special_info = 2;
+  repeated ProductsInfo products = 3;
+}

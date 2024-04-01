@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "UpdateInfo.proto";
+import "ShowQuestData.proto";
+import "NodeInfo.proto";
+
+message CheatSetSliceResponse {
+  UpdateInfo update_info = 1;
+  repeated ShowQuestData quest_data = 2;
+  repeated NodeInfo node_infos = 3;
+}

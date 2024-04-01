@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "BackPackItem.proto";
+
+message ChooseQuestRewardResponse {
+  ErrorResponse err = 1;
+  repeated BackPackItem back_pack_items = 2;
+}

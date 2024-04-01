@@ -1,0 +1,20 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message Generic10ArgsLog {
+  int32 data_type = 1;
+  string arg1 = 2;
+  string arg2 = 3;
+  string arg3 = 4;
+  string arg4 = 5;
+  string arg5 = 6;
+  string arg6 = 7;
+  string arg7 = 8;
+  string arg8 = 9;
+  string arg9 = 10;
+  string arg10 = 11;
+}

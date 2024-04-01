@@ -1,0 +1,17 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "BackPackItem.proto";
+
+message CharacterRareUpResponse {
+  ErrorResponse err = 1;
+  int32 character_i_d = 2;
+  int32 rare_lv = 3;
+  int32 rare_index = 4;
+  repeated BackPackItem consume_materials = 5;
+}

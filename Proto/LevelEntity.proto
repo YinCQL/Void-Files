@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message LevelEntity {
+  string level_i_d = 1;
+  int32 times = 2;
+  int32 chest_count = 3;
+  repeated int32 high_spawner = 4;
+  repeated int32 weather_spawner = 5;
+}

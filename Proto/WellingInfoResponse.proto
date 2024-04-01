@@ -1,0 +1,12 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message WellingInfoResponse {
+  int32 points = 1;
+  repeated int32 rewarded_ranks = 2;
+  int64 refresh_timestamp = 3;
+}

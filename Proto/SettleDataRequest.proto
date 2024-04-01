@@ -1,0 +1,24 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "StatActionData.proto";
+import "CharacterExpInfo.proto";
+import "AccompanyExpInfo.proto";
+import "EnemyCount.proto";
+
+message SettleDataRequest {
+  bool level_clear = 1;
+  int32 city_i_d = 2;
+  int32 level_i_d = 3;
+  int32 chestling_pool_i_d = 4;
+  repeated StatActionData stat_data = 5;
+  repeated CharacterExpInfo character_exp_infos = 6;
+  repeated AccompanyExpInfo accompany_exp_infos = 7;
+  repeated EnemyCount enemy_data = 8;
+  map<int32, int32> loot = 9;
+  int32 welling_points = 10;
+}

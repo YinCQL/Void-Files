@@ -1,0 +1,17 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+enum RewardStateType {
+  QuestStateInvalid = 0;
+  Unfinished = 1;
+  CanClaim = 2;
+  Finished = 3;
+  MrLocked = 4;
+  UnHoldContract = 5;
+  DiscardContract = 6;
+  UnStart = 7;
+}

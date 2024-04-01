@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message RemoteServerInfoResponse {
+  string i_d = 1;
+  string i_p = 2;
+  string hostname = 3;
+  int32 online_player_number = 4;
+  string game_version = 5;
+}

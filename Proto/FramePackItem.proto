@@ -1,0 +1,26 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "LoadModInfo.proto";
+import "FrameColor.proto";
+
+message FramePackItem {
+  int32 seq_i_d = 1;
+  int32 item_i_d = 2;
+  int32 amount = 3;
+  int32 rank = 4;
+  bool lock = 5;
+  int32 exp = 6;
+  int32 electricity = 7;
+  int32 mod_slot = 8;
+  int64 gain_time_stamp = 9;
+  repeated LoadModInfo load_mod_info = 10;
+  map<int32, FrameColor> color_infos = 11;
+  map<int32, int32> polarity_info = 12;
+  int32 polarization_count = 13;
+  int32 used_electricity = 14;
+}

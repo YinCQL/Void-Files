@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ItemList.proto";
+import "UpdateInfo.proto";
+
+message CheatSignInResponse {
+  int32 normal_sum = 1;
+  int32 rare_sum = 2;
+  ItemList reward_items = 3;
+  UpdateInfo update_info = 4;
+}

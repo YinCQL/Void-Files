@@ -1,0 +1,22 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ItemList.proto";
+import "PlayerData.proto";
+import "BattlePassInfo.proto";
+import "CurrencyEntity.proto";
+import "CharacterEntity.proto";
+import "BoostInfoByType.proto";
+
+message UpdateInfo {
+  ItemList items = 1;
+  PlayerData player_data = 2;
+  BattlePassInfo battle_pass_info = 3;
+  repeated CurrencyEntity currency_data = 4;
+  repeated CharacterEntity character_infos = 5;
+  repeated BoostInfoByType boost_data = 6;
+}

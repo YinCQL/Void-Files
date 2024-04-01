@@ -1,0 +1,24 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ModPackItem.proto";
+import "FramePackItem.proto";
+import "WeaponPackItem.proto";
+import "MechaPackItem.proto";
+import "ServantPackItem.proto";
+import "BackPackItem.proto";
+import "ItemTotalCount.proto";
+
+message ItemList {
+  repeated ModPackItem mod_items = 1;
+  repeated FramePackItem frame_items = 2;
+  repeated WeaponPackItem weapon_items = 3;
+  repeated MechaPackItem mecha_items = 4;
+  repeated ServantPackItem servant_items = 5;
+  repeated BackPackItem items = 6;
+  repeated ItemTotalCount total_count = 7;
+}

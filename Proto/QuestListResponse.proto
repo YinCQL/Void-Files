@@ -1,0 +1,20 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ShowQuestStepData.proto";
+import "ShowQuestData.proto";
+import "StatData.proto";
+import "TrackQuestData.proto";
+
+message QuestListResponse {
+  ErrorResponse err = 1;
+  repeated ShowQuestStepData quest_data = 2;
+  repeated ShowQuestData battle_quest_data = 3;
+  repeated StatData stat_data = 4;
+  repeated TrackQuestData track_quest_data = 5;
+}

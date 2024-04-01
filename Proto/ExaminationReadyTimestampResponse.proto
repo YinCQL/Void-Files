@@ -1,0 +1,13 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+
+message ExaminationReadyTimestampResponse {
+  ErrorResponse err = 1;
+  int64 ready_timestamp = 2;
+}

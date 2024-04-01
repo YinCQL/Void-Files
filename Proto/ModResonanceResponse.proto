@@ -1,0 +1,17 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "UpdateInfo.proto";
+
+message ModResonanceResponse {
+  ErrorResponse err = 1;
+  int32 mod_seq_i_d = 2;
+  int32 use_mod_sep_i_d = 3;
+  repeated int32 mod_buff_i_d = 4;
+  UpdateInfo update_info = 5;
+}

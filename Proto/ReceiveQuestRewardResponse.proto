@@ -1,0 +1,16 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ShowQuestData.proto";
+import "ItemList.proto";
+import "UpdateInfo.proto";
+
+message ReceiveQuestRewardResponse {
+  repeated ShowQuestData quest_data = 1;
+  ItemList items = 2;
+  UpdateInfo update_info = 3;
+}

@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message BasicUserInfo {
+  string u_i_d = 1;
+  string nickname = 2;
+  int32 avatar_i_d = 3;
+  int32 avatar_frame_i_d = 4;
+  int64 last_logout_timestamp = 5;
+}

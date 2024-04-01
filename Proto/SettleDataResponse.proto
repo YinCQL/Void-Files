@@ -1,0 +1,38 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "NodeInfo.proto";
+import "SpecialLevelInfo.proto";
+import "SettleRewardInfo.proto";
+import "UpdateInfo.proto";
+import "ShowQuestData.proto";
+import "CharacterExpInfo.proto";
+import "AccompanyExpInfo.proto";
+import "FeatureStatus.proto";
+import "TrackQuestData.proto";
+
+message SettleDataResponse {
+  ErrorResponse err = 1;
+  bool level_clear = 2;
+  int32 chestling_count = 3;
+  repeated NodeInfo node_infos = 4;
+  repeated SpecialLevelInfo special_level_infos = 5;
+  repeated SettleRewardInfo settle_reward_infos = 6;
+  UpdateInfo battle_update_info = 7;
+  UpdateInfo quest_update_info = 8;
+  UpdateInfo settle_update_info = 9;
+  UpdateInfo chestling_update_info = 10;
+  repeated ShowQuestData quest_data = 11;
+  repeated CharacterExpInfo character_exp_infos = 12;
+  repeated AccompanyExpInfo accompany_exp_infos = 13;
+  repeated int32 finished_quest_i_ds = 14;
+  map<int32, FeatureStatus> feature_statuses = 15;
+  repeated int32 next_story_level_i_d = 16;
+  repeated int32 finished_quest_pack_i_ds = 17;
+  repeated TrackQuestData track_quest_data = 18;
+}

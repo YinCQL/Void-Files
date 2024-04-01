@@ -1,0 +1,20 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ProfileCharacter.proto";
+
+message GetProfileResponse {
+  string u_i_d = 1;
+  int32 m_r = 2;
+  int32 exp = 3;
+  string nickname = 4;
+  int32 equipment_count = 5;
+  int32 mod_count = 6;
+  int32 avatar_i_d = 7;
+  int32 avatar_frame_i_d = 8;
+  ProfileCharacter profile_character = 9;
+}

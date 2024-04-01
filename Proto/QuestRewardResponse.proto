@@ -1,0 +1,26 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "ErrorResponse.proto";
+import "ShowQuestData.proto";
+import "ItemList.proto";
+import "UpdateInfo.proto";
+import "NodeInfo.proto";
+import "TrackQuestData.proto";
+import "FeatureStatus.proto";
+
+message QuestRewardResponse {
+  ErrorResponse err = 1;
+  repeated ShowQuestData quest_data = 2;
+  ItemList items = 3;
+  UpdateInfo update_info = 4;
+  repeated NodeInfo node_infos = 5;
+  repeated int32 finished_quest_i_ds = 6;
+  repeated int32 finished_quest_pack_i_ds = 7;
+  repeated TrackQuestData track_quest_data = 8;
+  map<int32, FeatureStatus> feature_statuses = 9;
+}

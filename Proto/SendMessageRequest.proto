@@ -1,0 +1,15 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "RoomType.proto";
+
+message SendMessageRequest {
+  bytes content = 1;
+  RoomType type = 2;
+  string target_i_d = 3;
+  string room_i_d = 4;
+}

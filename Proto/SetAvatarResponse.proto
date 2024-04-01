@@ -1,0 +1,11 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message SetAvatarResponse {
+  int32 avatar_i_d = 1;
+  int32 avatar_frame_i_d = 2;
+}
