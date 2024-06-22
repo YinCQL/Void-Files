@@ -5,6 +5,8 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-message ReceiveContractQuestRewardRequest {
-  int32 quest_i_d = 1;
+import "UpdateInfo.proto";
+
+message CheatFullRankAllModResponse {
+  UpdateInfo update_info = 1;
 }

@@ -5,12 +5,11 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-import "ContractQuestProgressInfo.proto";
-import "ContractQuestData.proto";
 import "UpdateInfo.proto";
 
-message ReceiveContractQuestRewardResponse {
-  ContractQuestProgressInfo info = 1;
-  ContractQuestData quest_data = 2;
+message PetBoxClaimResponse {
+  map<int32, float> products = 1;
+  int64 start_calculate_timestamp = 2;
   UpdateInfo update_info = 3;
+  int64 product_duration = 4;
 }

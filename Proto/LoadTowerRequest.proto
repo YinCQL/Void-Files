@@ -5,5 +5,8 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-message ContractQuestInfoRequest {
+message LoadTowerRequest {
+  int32 squad_idx = 1;
+  int32 slot = 2;
+  int32 tower_seq_i_d = 3;
 }

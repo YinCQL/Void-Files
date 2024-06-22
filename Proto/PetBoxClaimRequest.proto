@@ -5,10 +5,5 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-import "ErrorResponse.proto";
-import "UpdateInfo.proto";
-
-message ReceiveContractQuestMoneyResponse {
-  ErrorResponse err = 1;
-  UpdateInfo update_info = 2;
+message PetBoxClaimRequest {
 }

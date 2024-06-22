@@ -6,9 +6,12 @@ syntax = "proto3";
 option csharp_namespace = "Protos";
 
 import "StoryInfo.proto";
+import "NormalInfo.proto";
 
 message NodeInfo {
   int32 node_i_d = 1;
   repeated StoryInfo story_infos = 2;
-  bool hidden = 3;
+  int32 normal_level_index = 3;
+  bool hidden = 4;
+  repeated NormalInfo normal_infos = 5;
 }

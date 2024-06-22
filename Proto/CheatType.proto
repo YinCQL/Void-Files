@@ -12,4 +12,5 @@ enum CheatType {
   Frame = 3;
   Mecha = 4;
   Servant = 5;
+  Tower = 6;
 }

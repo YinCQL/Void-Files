@@ -13,4 +13,5 @@ message LineStepData {
   int64 refresh_time_stamp = 2;
   RewardStateType state = 3;
   repeated StepData step_data = 4;
+  int32 completion_times = 5;
 }

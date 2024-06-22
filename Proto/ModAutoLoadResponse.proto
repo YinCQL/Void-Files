@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "LoadModInfo.proto";
+
+message ModAutoLoadResponse {
+  int32 carrier_seq_i_d = 1;
+  int32 item_type = 2;
+  repeated LoadModInfo load_mod_info = 3;
+}

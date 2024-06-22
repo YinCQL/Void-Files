@@ -35,4 +35,5 @@ message SettleDataResponse {
   repeated int32 next_story_level_i_d = 16;
   repeated int32 finished_quest_pack_i_ds = 17;
   repeated TrackQuestData track_quest_data = 18;
+  int32 level_i_d = 19;
 }

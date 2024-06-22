@@ -7,9 +7,11 @@ option csharp_namespace = "Protos";
 
 import "ErrorResponse.proto";
 import "ShowQuestStepData.proto";
+import "NodeInfo.proto";
 
 message CheatSetQuestResponse {
   ErrorResponse err = 1;
   repeated ShowQuestStepData quest_data = 2;
   bool clear_other = 3;
+  repeated NodeInfo node_infos = 4;
 }

@@ -9,9 +9,13 @@ message PlayerData {
   int32 level = 1;
   int32 exp = 2;
   string nick_name = 3;
-  int32 weapon_cat_capacity = 4;
-  int32 frame_cat_capacity = 5;
-  int32 mecha_cat_capacity = 6;
-  int32 servant_cat_capacity = 7;
-  int32 riven_mod_capacity = 8;
+  int32 contract_exp = 4;
+  int64 contract_refresh_time_stamp = 5;
+  int32 weapon_cat_capacity = 6;
+  int32 frame_cat_capacity = 7;
+  int32 mecha_cat_capacity = 8;
+  int32 servant_cat_capacity = 9;
+  int32 tower_cat_capacity = 10;
+  int32 riven_mod_capacity = 11;
+  bool contract_unlock = 12;
 }

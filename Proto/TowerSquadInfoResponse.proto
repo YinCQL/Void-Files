@@ -5,8 +5,9 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-message ContractQuestProgressInfo {
-  int64 last_term_time_stamp = 1;
-  int64 next_refresh_time_stamp = 2;
-  int32 finished_contract_quest = 3;
+import "TowerSquadFormat.proto";
+
+message TowerSquadInfoResponse {
+  int32 current_squad_idx = 1;
+  repeated TowerSquadFormat squad_info = 2;
 }

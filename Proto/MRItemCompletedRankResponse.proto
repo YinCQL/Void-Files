@@ -5,7 +5,8 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
+import "MRPackItem.proto";
+
 message MRItemCompletedRankResponse {
-  int32 item_i_d = 1;
-  int32 completed_rank = 2;
+  repeated MRPackItem m_r_pack_items = 1;
 }

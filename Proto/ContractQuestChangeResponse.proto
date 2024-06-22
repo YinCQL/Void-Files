@@ -5,8 +5,8 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-import "ContractQuestData.proto";
+import "ShowQuestData.proto";
 
 message ContractQuestChangeResponse {
-  ContractQuestData quest_data = 1;
+  repeated ShowQuestData quest_data = 1;
 }

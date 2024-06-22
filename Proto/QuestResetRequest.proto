@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "QuestRewardData.proto";
+import "StatActionData.proto";
+
+message QuestResetRequest {
+  repeated QuestRewardData quest_data = 1;
+  repeated StatActionData stat_data = 2;
+}

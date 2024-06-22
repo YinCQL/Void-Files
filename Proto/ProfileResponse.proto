@@ -5,8 +5,6 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
-import "BackPackItem.proto";
-
-message ReceiveContractQuestMoneyRequest {
-  repeated BackPackItem gold_record_items = 1;
+message ProfileResponse {
+  map<string, string> data = 1;
 }

@@ -20,5 +20,4 @@ message WeaponPackItem {
   repeated LoadModInfo load_mod_info = 10;
   map<int32, int32> polarity_info = 11;
   int32 polarization_count = 12;
-  int32 used_electricity = 13;
 }

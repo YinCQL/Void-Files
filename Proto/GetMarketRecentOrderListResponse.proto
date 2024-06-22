@@ -10,6 +10,5 @@ import "MarketOrder.proto";
 
 message GetMarketRecentOrderListResponse {
   ErrorResponse err = 1;
-  int32 action = 2;
-  repeated MarketOrder market_order_list = 3;
+  repeated MarketOrder market_order_list = 2;
 }

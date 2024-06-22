@@ -1,0 +1,14 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+message PetBoxInfoResponse {
+  int32 rank = 1;
+  map<int32, float> products = 2;
+  int64 start_calculate_timestamp = 3;
+  repeated int32 pet_seq_i_ds = 4;
+  int64 product_duration = 5;
+}

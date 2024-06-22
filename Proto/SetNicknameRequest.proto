@@ -7,4 +7,5 @@ option csharp_namespace = "Protos";
 
 message SetNicknameRequest {
   string nickname = 1;
+  bool need_item = 2;
 }

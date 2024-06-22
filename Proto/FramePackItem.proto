@@ -22,5 +22,4 @@ message FramePackItem {
   map<int32, FrameColor> color_infos = 11;
   map<int32, int32> polarity_info = 12;
   int32 polarization_count = 13;
-  int32 used_electricity = 14;
 }

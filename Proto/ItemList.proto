@@ -10,6 +10,8 @@ import "FramePackItem.proto";
 import "WeaponPackItem.proto";
 import "MechaPackItem.proto";
 import "ServantPackItem.proto";
+import "TowerPackItem.proto";
+import "PetPackItem.proto";
 import "BackPackItem.proto";
 import "ItemTotalCount.proto";
 
@@ -19,6 +21,8 @@ message ItemList {
   repeated WeaponPackItem weapon_items = 3;
   repeated MechaPackItem mecha_items = 4;
   repeated ServantPackItem servant_items = 5;
-  repeated BackPackItem items = 6;
-  repeated ItemTotalCount total_count = 7;
+  repeated TowerPackItem tower_items = 6;
+  repeated PetPackItem pet_items = 7;
+  repeated BackPackItem items = 8;
+  repeated ItemTotalCount total_count = 9;
 }

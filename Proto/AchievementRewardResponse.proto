@@ -8,6 +8,6 @@ option csharp_namespace = "Protos";
 import "UpdateInfo.proto";
 
 message AchievementRewardResponse {
-  int32 achievement_i_d = 1;
+  repeated int32 achievement_i_ds = 1;
   UpdateInfo update_info = 2;
 }

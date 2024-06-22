@@ -14,4 +14,7 @@ message PlaceMarketOrderResponse {
   int32 action = 2;
   BackPackItem submitted_item = 3;
   UpdateInfo update_info = 4;
+  int32 gain_item_i_d = 5;
+  int32 gain_currency = 6;
+  bool gain_overflow = 7;
 }

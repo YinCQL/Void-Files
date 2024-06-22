@@ -11,14 +11,13 @@ import "ModAttributes.proto";
 message ModPackItem {
   int32 seq_i_d = 1;
   int32 item_i_d = 2;
-  int32 rare_lv = 3;
-  int32 level_lv = 4;
-  bool lock = 5;
-  int64 gain_time_stamp = 6;
-  repeated int32 mod_buff_i_d = 7;
-  repeated int32 carrier_seq_i_ds = 8;
-  int64 trade_lock_timestamp = 9;
-  ModCastStatus cast_status = 10;
-  ModAttributes attributes = 11;
-  int32 polarity = 12;
+  int32 level_lv = 3;
+  bool lock = 4;
+  int64 gain_time_stamp = 5;
+  repeated int32 mod_buff_i_d = 6;
+  repeated int32 carrier_seq_i_ds = 7;
+  int64 trade_lock_timestamp = 8;
+  ModCastStatus cast_status = 9;
+  ModAttributes attributes = 10;
+  int32 polarity = 11;
 }

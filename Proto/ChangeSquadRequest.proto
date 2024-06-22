@@ -5,9 +5,9 @@ syntax = "proto3";
 
 option csharp_namespace = "Protos";
 
+import "SquadEntity.proto";
+
 message ChangeSquadRequest {
   int32 squad_i_d = 1;
-  int32 member_type = 2;
-  int32 identity_i_d = 3;
-  int32 position = 4;
+  map<int32, SquadEntity> squads = 3;
 }

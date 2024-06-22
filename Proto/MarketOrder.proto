@@ -14,4 +14,7 @@ message MarketOrder {
   int32 actual_price = 6;
   int32 state = 7;
   int32 amount = 8;
+  int64 created_at = 9;
+  int64 matched_at = 10;
+  int32 deal_action = 11;
 }

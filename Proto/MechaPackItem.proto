@@ -19,5 +19,4 @@ message MechaPackItem {
   repeated LoadModInfo load_mod_info = 9;
   map<int32, int32> polarity_info = 10;
   int32 polarization_count = 11;
-  int32 used_electricity = 12;
 }

@@ -1,0 +1,12 @@
+// Decompiled with protodec
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+
+syntax = "proto3";
+
+option csharp_namespace = "Protos";
+
+import "PetPackItem.proto";
+
+message PetInfoResponse {
+  repeated PetPackItem pet_infos = 1;
+}
